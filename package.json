@@ -1,0 +1,19 @@
+{
+  "name": "messi",
+  "version": "1.0.0",
+  "description": "messi",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js --ignore dbmessi.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lowdb": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.19",
+    "system-sleep": "^1.3.7"
+  }
+}
