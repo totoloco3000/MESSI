@@ -7,15 +7,17 @@ const sleep = require("system-sleep");
 //const cpus = os.cpus().length - 1;
 const cantxcpu = 1000;
 
-for (let i = 37031; i < 100000000; i++) {
+for (let i = 4000000; i < 50000000; i++) {
     fetch("http://20.226.38.138/dni/"+i)
     .then((res) => {
         return res.json();
     })
     .then((res) => {
-        postData("http://localhost:3000/dni", {"dni": i, "data": res})
+        console.log(i);
+        console.log(res);
+        //postData("http://localhost:3000/dni", {"dni": i, "data": res})
     })
-    sleep(120);
+    sleep(5);
 }
 
 // Example POST method implementation:
