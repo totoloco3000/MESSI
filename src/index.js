@@ -7,7 +7,7 @@ const fs = require('fs')
 //const cpus = os.cpus().length - 1;
 const cantxcpu = 1000;
 
-for (let i = 4000000; i < 4000003; i++) {
+for (let i = 4000000; i < 50000000; i++) {
     fetch("http://20.226.38.138/dni/"+i)
     .then((res) => {
         return res.json();
