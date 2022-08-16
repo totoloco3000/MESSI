@@ -17,7 +17,7 @@ for (let i = 4000000; i < 50000000; i++) {
         console.log(res);
         //postData("http://localhost:3000/dni", {"dni": i, "data": res})
     })
-    sleep(5);
+    sleep(2);
 }
 
 // Example POST method implementation:
